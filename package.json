@@ -1,6 +1,6 @@
 {
   "name": "application-monitoring-in-vue-js-with-sentry",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,6 +11,7 @@
   "dependencies": {
     "@sentry/tracing": "^6.16.1",
     "@sentry/vue": "^6.16.1",
+    "vite-plugin-sentry": "^1.0.12",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12"
   },
