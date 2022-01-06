@@ -26,3 +26,8 @@ Sentry.init({
 });
 
 app.use(router).mount("#app");
+const user = {
+  email: "daniel@vueschool.io",
+};
+Sentry.setUser(user);
+Sentry.configureScope((scope) => scope.setUser(null));
