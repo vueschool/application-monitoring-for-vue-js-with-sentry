@@ -1,5 +1,18 @@
 <script setup>
+import * as Sentry from "@sentry/vue";
 const user = {};
+const post = {
+  id: 1,
+  title: "Hello world",
+  body: "lorem ipsum, blah, blah, blah...",
+};
+
+Sentry.setContext("post", {
+  id: post.id,
+  postTitle: post.title,
+});
+Sentry.setTag("randomTag", "hello-tag");
+
 const makeToast = () => {
   sliceBread();
 };
